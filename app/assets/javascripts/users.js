@@ -3,10 +3,10 @@
 $(document).on('turbolinks:load', function() {
   
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
   
   //Set Stripe public key
-  Stripe.setPublishable( $('meta[name="stripe-key"]').attr('content') );
+  Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
   
   //When user clicks form submit btn
   submitBtn.click(function(event) {
