@@ -4,4 +4,8 @@ class ProfilesController < ApplicationController
     # Render blank profile details form
     @profile=Profile.new
   end
+  
+  def create
+    
+  end
 end
